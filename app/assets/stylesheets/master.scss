@@ -67,6 +67,14 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-device-width: 480px) {
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 400%;
+  }
   .nav-header .container {
     width: 100%
   }
