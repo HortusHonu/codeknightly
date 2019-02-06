@@ -2,6 +2,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'dank_monoregular', sans serif;
 }
 
+h1 {
+  font-size: 250%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 100%;
+  text-align: center;
+}
+
 .nav {
   width: 100%
 }
@@ -69,11 +79,11 @@ nav ul li a:hover {
 @media only screen and (max-device-width: 480px) {
 
   h1 {
-    font-size: 32px;
+    font-size: 400%;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 200%;
   }
 
   .nav-header .container {
