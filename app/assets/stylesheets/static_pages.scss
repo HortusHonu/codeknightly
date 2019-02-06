@@ -1,3 +1,16 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-size: 250%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 100%;
+  text-align: center;
+}
+
+.profile-circle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
