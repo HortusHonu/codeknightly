@@ -14,56 +14,37 @@
  *= require_self
  */
 
+ /*  Navigation menu */
+
+ .nav-items {
+    width: 100%;
+ }
+
 .nav-items ul {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    text-align: center;
 }
 
 .nav-items ul li {
-  list-style: none;
-  text-align: center;
-  text-decoration: none;
+    display: inline-block;
 }
 
-.nav-items a {
-  text-decoration: none;
+.nav-items ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #444;
 }
-// .nav-header {
-//   border-bottom: 1px solid #ccc;
-// }
 
-// .nav-items ul {
-//   list-style: none;
-//   padding: 0px;
-//   margin: 0px;
-//   font-weight: normal;
-//   text-align: center;
-//   font-family: "dank_monoregular";
-// }
+.nav-items ul li a:hover {
+    background-color: #5a00c9;
+    color: #fff;
+}
 
-// .nav-items ul li {
-//   display: inline-block;
-// }
-
-// .nav-items ul li a {
-//   display: block;
-//   padding: 10px 40px;
-//   text-decoration: none;
-//   color: #444;
-// }
-
-// .nav-items ul li a:hover {
-//   background-color: #5a00c9;
-//   color: #fff;
-// }
-
-// @supports (display: grid) {
-//   .wrapper > * {
-//     width: auto;
-//     margin: 0;
-//   }
-// }
+/*  Footer */
 
 .footer {
   text-align: center;
@@ -86,3 +67,30 @@
   color: #5a00c9;
 }
 
+/*  Media queries */
+
+@media (max-width: 320px) {
+  .nav-header .nav-container {
+    width: 100%;
+  }
+  
+  .nav-items ul {
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .nav-items ul li {
+    width: 50%;
+    float: left;
+  }
+
+  .nav-items ul li:nth-of-type(odd) a {
+    border-right: 1px solid #ccc;
+  }
+
+  .nav-items ul li a {
+    padding: 8px 0px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+  }
+}
