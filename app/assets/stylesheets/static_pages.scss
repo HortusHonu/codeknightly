@@ -1,6 +1,36 @@
-.profile-circle img {
+.landing-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hd"
+    "main"
+    "motto";
+}
+
+header {
+  grid-area: hd;
+}
+
+article {
+  grid-area: main;
+}
+
+aside {
+  grid-area: motto;
+}
+
+header {
+  text-align: center;
+}
+
+article .profile-circle img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 100%;
 }
+
+aside {
+  text-align: center
+}
+

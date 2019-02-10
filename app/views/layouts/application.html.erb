@@ -5,15 +5,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0'>
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="nav-header">
-      <div class="container">
-        <nav class="nav">
+    <div class="nav-grid">
+      <div class="nav-header">
+        <div class="nav-items">
           <ul>
             <li><a href='#'>Home</a></li>
             <li><a href='#'>Portfolio</a></li>
@@ -21,9 +25,26 @@
             <li><a href='#'>Resume</a></li>
             <li><a href='#'>Contact</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </div>
+
+
+
+
     <%= yield %>
+
+  <div class="footer">
+    <%= link_to 'https://www.linkedin.com/in/james-eric-knight/' do %>
+      <i class="fab fa-linkedin fa-5x"></i>
+    <% end %>
+    <%= link_to 'https://github.com/HortusHonu' do %>
+      <i class="fab fa-github-square fa-5x"></i>
+    <% end %>
+    <%= link_to 'https://twitter.com/codeknightly' do %>
+      <i class="fab fa-twitter-square fa-5x"></i>
+    <% end %>
+  </div>
+
   </body>
 </html>
