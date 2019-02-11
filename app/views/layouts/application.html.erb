@@ -28,6 +28,8 @@
       </div>
     </header>
 
+    <%= yield %>
+
     <footer class="footer">
       <%= link_to 'https://www.linkedin.com/in/james-eric-knight/', target: :_external do %>
         <i class="fab fa-linkedin fa-5x"></i>
@@ -39,8 +41,6 @@
         <i class="fab fa-twitter-square fa-5x"></i>
       <% end %>
     </footer>
-
-    <%= yield %>
 
   </body>
 </html>
