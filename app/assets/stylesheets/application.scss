@@ -69,7 +69,9 @@
 
 /*  Media queries */
 
-@media (min-width: 320px) and (max-width: 1500px) {
+/*  Media queries ^^^Mobile^^^ */
+
+@media (max-width: 320px) {
   .nav-header .nav-container {
     width: 100%;
   }
@@ -94,3 +96,31 @@
     display: block;
   }
 }
+
+// /*  Media queries ^^^Tablet^^^ */
+
+// @media (min-width: 320px) and (max-width: 720px) {
+//   .nav-header .nav-container {
+//     width: 100%;
+//   }
+  
+//   .nav-items ul {
+//     width: 100%;
+//     font-weight: normal;
+//   }
+
+//   .nav-items ul li {
+//     width: 50%;
+//     float: left;
+//   }
+
+//   .nav-items ul li:nth-of-type(odd) a {
+//     border-right: 1px solid #ccc;
+//   }
+
+//   .nav-items ul li a {
+//     padding: 8px 0px;
+//     border-bottom: 1px solid #ccc;
+//     display: block;
+//   }
+// }

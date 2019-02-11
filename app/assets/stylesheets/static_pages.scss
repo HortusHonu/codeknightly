@@ -1,36 +1,71 @@
-.landing-grid {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "hd"
-    "main"
-    "motto";
+// .landing-grid {
+//   display: grid;
+//   grid-template-columns: auto;
+// }
+
+// .landing-header {
+//   text-align: center;
+// }
+
+// article .profile-circle img {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border-radius: 100%;
+// }
+
+// aside {
+//   text-align: center
+// }
+
+/*  Media queries */
+
+  @media (min-width: 320px) {
+    .landing-grid {
+      grid-template-columns: auto;
+    }  
+    
+    .landing-header {
+      text-align: center;
+    }
+    
+    article .profile-circle img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      border-radius: 100%;
+    }
+    
+    aside {
+      text-align: center
+    }
+    
+  }
+
+
+
+@media (max-width: 320px) {
+  .landing-grid {
+    grid-template-columns: auto;
+  }  
+  
+  .landing-header {
+    text-align: center;
+  }
+  
+  article .profile-circle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-radius: 100%;
+  }
+  
+  aside {
+    text-align: center
+  }
+  
 }
 
-header {
-  grid-area: hd;
-}
-
-article {
-  grid-area: main;
-}
-
-aside {
-  grid-area: motto;
-}
-
-header {
-  text-align: center;
-}
-
-article .profile-circle img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100%;
-}
-
-aside {
-  text-align: center
-}
 
