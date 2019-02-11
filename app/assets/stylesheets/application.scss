@@ -71,7 +71,7 @@
 
 /*  Media queries ^^^Mobile^^^ */
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .nav-header .nav-container {
     width: 100%;
   }
