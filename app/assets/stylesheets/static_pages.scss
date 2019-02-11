@@ -45,13 +45,14 @@
 
 
 
-@media only screen and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .landing-grid {
     grid-template-columns: auto;
   }  
   
-  .landing-header {
+  .landing-header span {
     text-align: center;
+    padding: 10px;
   }
   
   article .profile-circle img {
