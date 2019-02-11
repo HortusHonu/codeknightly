@@ -1,22 +1,3 @@
-// .landing-grid {
-//   display: grid;
-//   grid-template-columns: auto;
-// }
-
-// .landing-header {
-//   text-align: center;
-// }
-
-// article .profile-circle img {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   border-radius: 100%;
-// }
-
-// aside {
-//   text-align: center
-// }
 
 /*  Media queries */
 
@@ -63,8 +44,9 @@
     border-radius: 100%;
   }
   
-  aside {
-    text-align: center
+  aside span {
+    text-align: center;
+    padding: 10px;
   }
   
 }
