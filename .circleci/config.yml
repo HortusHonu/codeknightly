@@ -5,7 +5,11 @@ jobs:
       - image: circleci/ruby:2.5.1
     steps:
       - checkout
-      - run: 
+      - run:
+          name: Bundle Install
+          command: bundle install
+      
+      -run:     
           name: Run rspec
           command: bundle exec rspec
                                                  
