@@ -18,7 +18,14 @@ jobs:
       - run:
           name: Bundle Install
           command: bundle install
+
+      - run:
+          name: Build database
+          command: bundle exec rails db:create db:migrate
       
+      - run:
+          name: Execute Rspec
+          command: bundle exec rspec
     #   - run:     
     #       name: Run rspec
     #       command: bundle exec rspec
