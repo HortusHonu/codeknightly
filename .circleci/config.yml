@@ -19,7 +19,7 @@ jobs:
           name: Bundle Install
           command: bundle install
       
-      - run:     
-          name: Run rspec
-          command: bundle exec rspec
+    #   - run:     
+    #       name: Run rspec
+    #       command: bundle exec rspec
                                                  
