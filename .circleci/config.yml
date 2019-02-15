@@ -1,11 +1,8 @@
 version: 2
 jobs:
     build:
-        working_directory: ~/codeknightly
+      working_directory: ~/codeknightly
         docker:
-            - image: circleci/ruby:2.5.1
-            environment:
-                RAILS_ENV: test
-    steps:
+      steps:
         -checkout
                                                  
