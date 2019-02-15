@@ -7,5 +7,5 @@ jobs:
       - checkout
       - run: 
           name: Run rspec
-          command: bundle exec rpsec
+          command: bundle exec rspec
                                                  
