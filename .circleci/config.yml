@@ -1,22 +1,11 @@
 version: 2
 jobs:
-  one:
-    docker:
-      - image: circleci/ruby:2.5.1
+    build:
+        working_directory: ~/codeknightly
+        docker:
+            - image: circleci/ruby:2.5.1
+            environment:
+                RAILS_ENV: test
     steps:
-      - checkout
-      - run: echo "a first hello"
-      - run: sleep 25
-  two:
-    docker:
-      - image: circleci/ruby:2.5.1
-    steps:
-      - checkout
-      - run: echo "a first hello"
-      - run: sleep 15
-workflows:
-  version: 2
-  one_and_two:
-    jobs:
-      - one
-      - two                                                             
+        -checkout
+                                                 
