@@ -5,5 +5,7 @@ jobs:
       - image: circleci/ruby:2.5.1
     steps:
       - checkout
-      - run: echo "here we go again"
+      - run: 
+          name: Run rspec
+          command: bundle exec rpsec
                                                  
